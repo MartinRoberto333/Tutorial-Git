@@ -14,7 +14,7 @@
     <header>
         <h1><a href="./index.html">Tutorial git <img src="../img/logoGit.png" alt=""> </a></h1>
     </header>
-        <section id="menu">
+    <section id="menu">
             <ul>
                 <li><a class="puntero" href="./index.html">Introducción</a></li>
                 <li><a class="puntero" href="./confInicial.html">Conf. inicial</a>
@@ -36,57 +36,79 @@
                 <li><a href="./cambios.html" class="puntero">Cambios</a>
                     <ul>
                         <li><a href="./cambios.html#cmdAdd">add</a></li>
-                        <li><a href="./areaTrabajo.html#cmdRestores">restore</a></li>
-                        <li><a href="./areaTrabajo.html#cmdRm">rm</a></li>
-                        <li><a href="./areaTrabajo.html#cmdCheckout">checkout</a></li>
+                        <li><a href="./cambios.html#cmdRestore">restore</a></li>
+                        <li><a href="./cambios.html#cmdRm">rm</a></li>
+                        <li><a href="./cambios.html#cmdCheckout">checkout</a></li>
                         
                     </ul>
                 </li>
                 <li><a href="./historialEstado.html" class="puntero">Historial/Estado</a>
                     <ul>
                         <li><a href="./historialEstado.html#cmdDiff">diff</a></li>
-                        <li><a href="./areaTrabajo.html#cmdLog">log</a></li>
-                        <li><a href="./areaTrabajo.html#cmdStatus">status</a></li>
+                        <li><a href="./historialEstado.html#cmdLog">log</a></li>
+                        <li><a href="./historialEstado.html#cmdStatus">status</a></li>
                         
                     </ul>
                 </li>
                 <li><a href="./historial.html" class="puntero">Historial</a>
                     <ul>
-                        <li><a href="./areaTrabajo.html#cmdInit#cmdBranch">branch</a></li>
-                        <li><a href="./areaTrabajo.html#cmdCommit">commit</a></li>
-                        <li><a href="./areaTrabajo.html#cmdMarge">marge</a></li>
-                        <li><a href="./areaTrabajo.html#cmdSwitch">switch</a></li>
+                        <li><a href="./historial.html#cmdInit#cmdBranch">branch</a></li>
+                        <li><a href="./historial.html#cmdCommit">commit</a></li>
+                        <li><a href="./historial.html#cmdMarge">marge</a></li>
+                        <li><a href="./historial.html#cmdSwitch">switch</a></li>
                         
                     </ul>
                 </li>
                 <li><a href="./colaboracion.html" class="puntero">Colaboración</a>
                     <ul>
-                        <li><a href="./areaTrabajo.html#cmdInit#cmdFetch">fetch</a></li>
-                        <li><a href="./areaTrabajo.html#cmdInit#cmdPull">pull</a></li>
-                        <li><a href="./areaTrabajo.html#cmdInit#cmdPush">push</a></li>
-                        <li><a href="./areaTrabajo.html#cmdInit#cmdRemote">remote</a></li>
+                        <li><a href="./colaboracion.html#cmdInit#cmdFetch">fetch</a></li>
+                        <li><a href="./colaboracion.html#cmdInit#cmdPull">pull</a></li>
+                        <li><a href="./colaboracion.html#cmdInit#cmdPush">push</a></li>
+                        <li><a href="./colaboracion.html#cmdInit#cmdRemote">remote</a></li>
                     </ul>
                 </li>
             </ul>
-        </section>
+    </section>
     
     <section id="contenido">
         <section id="usrEmail" class="comandoGit">
             <h2>Historial</h2><br><br>
                 <div>
-                    
-                    <p>
-                        Este tutorial se va a hablar de cómo comenzar a utilizar Git. Empezaremos 
-                        describiendo algunos conceptos básicos sobre las herramientas de control de 
-                        versiones; después, trataremos de explicar cómo hacer que Git funcione en tu
-                         sistema; finalmente, exploraremos cómo configurarlo para empezar a trabajar con él. <br><br>
-                        
-                         <p style="color: darkgoldenrod; font-weight: 800; font-size: 1.2em;">¿Qué es un control de versiones, y por qué debería importarte? </p><br>
-                         Un control de versiones es un sistema que registra los cambios realizados en un archivo o 
-                         conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones 
-                         específicas más adelante. 
-                    </p>
-
+                    <section id="cmdBranch">
+                        <br>
+                        <br>
+                        <p style="color: darkgoldenrod; font-weight: 800; font-size: 1.2em;">
+                            Ramificaciones en Git
+                        </p>
+                        <br>
+                        <p>
+                            <b>git branch</b>
+                            <br>
+                            <br>
+                            <i> ¿Qué es una rama? </i>
+                            <br>
+                            <br>
+                            Cualquier sistema de control de versiones moderno tiene algún mecanismo 
+                            para soportar el uso de ramas. Cuando hablamos de ramificaciones, 
+                            significa que tú has tomado la rama principal de desarrollo (master) y 
+                            a partir de ahí has continuado trabajando sin seguir la rama principal 
+                            de desarrollo.
+                            <br>
+                            <br>
+                            <p>
+                                <img class="imagenes" src="../img/confInicial/cmdName.png" >
+                            </p>
+                            <br>
+                            <br>
+                            <p>
+                                Sólo necesitas hacer esto una vez si especificas la opción --global, 
+                                ya que Git siempre usará esta información para todo lo que hagas en 
+                                ese sistema. Si quieres sobrescribir esta información con otro nombre 
+                                o dirección de correo para proyectos específicos, puedes ejecutar el 
+                                comando sin la opción --global cuando estés en ese proyecto.
+                            </p>
+                        </p>
+                    </section>
                 </div>
         </section>
     </section>
